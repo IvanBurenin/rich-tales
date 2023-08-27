@@ -52,7 +52,7 @@ export default function CartItem({cart, updateTotalSumm}) {
                     </div>
                 </div>
             </div>
-            <svg onClick={() => onDeleteCartItem(cart.parentId)} width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={styles.close} onClick={() => onDeleteCartItem(cart.parentId)} width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.45093 16L8.80387 8.5L16.1568 16M16.1568 1L8.80247 8.5L1.45093 1" stroke="#F3F3F3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
         </div>
