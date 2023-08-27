@@ -151,13 +151,13 @@ export default function Catalogue() {
 
                     <div className={styles.paginations}>
                         <span onClick={prevPage} className={`${styles.pagination} ${styles.pagePagination}`}>Предыдущая</span>
-                        <img onClick={prevPage} className={styles.paginationArrow} src="/rich-tales/arrow-left.svg" alt="" />
+                        <img onClick={prevPage} className={styles.paginationArrow} src="./rich-tales/arrow-left.svg" alt="" />
                         {Array.from({ length: pageNumbers }, (_, index) => (
                             <span key={index} className={`${styles.pagination} ${currentPage === index + 1 ? styles.paginationActive : ''}`} onClick={() => setCurrentPage(index + 1)}>
                                 {index + 1}
                             </span>
                         ))}
-                        <img onClick={nextPage} className={styles.paginationArrow} src="/rich-tales/arrow-right.svg" alt="" />
+                        <img onClick={nextPage} className={styles.paginationArrow} src="./rich-tales/arrow-right.svg" alt="" />
                         <span onClick={nextPage} className={`${styles.pagination} ${styles.pagePagination}`}>Следующая</span>
                     </div>
                 </div>
