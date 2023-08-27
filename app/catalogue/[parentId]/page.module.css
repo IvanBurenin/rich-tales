@@ -1,0 +1,156 @@
+.catalogueItem{
+    padding-top: 160px;
+    padding-bottom: 200px;
+}
+
+.catalogueInner{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 990px;
+}
+
+.catalogueTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalogueImg{
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}
+
+.catalogueRight{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.catalogueGenre{
+    color: #B9B9B9;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buttons{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.cartBtn{
+    width: 280px !important;
+}
+
+.heartBtn{
+    width: 95px !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.heartBtn svg{
+    transition: all .2s;
+}
+
+.heartBtn:hover svg path{
+    stroke: var(--gold);
+}
+
+.heartBtnActive svg path{
+    fill: var(--gold);
+    stroke: none;
+}
+
+.catalogueBrand{
+    margin-top: 30px;
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.catalogueFeatures{
+    margin-top: 130px;
+}
+
+.featuresList{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 60px;
+}
+
+.featureItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.dots{
+    display: flex;
+    flex: 1;
+    border-bottom: 1px dashed #626262;
+}
+
+.featureText{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 900px){
+    .featuresList{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .catalogueTop{
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalogueRight{
+        margin-top: 70px;
+        flex-direction: row;
+        align-items: end;
+    }
+    .catalogueBrand{
+        display: none;
+    }
+    .buttons{
+        margin-top: 0;
+        margin-left: 40px;
+    }
+    .cartBtn{
+        width: 100% !important;
+    }
+    .heartBtn{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 700px){
+    .catalogueImg{
+        width: 100%;
+    }
+    .catalogueRight{
+        align-items: center;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px){
+    .catalogueTop{
+        align-items: baseline;
+    }
+    .catalogueRight{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .buttons{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+}

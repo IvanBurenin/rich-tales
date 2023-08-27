@@ -1,0 +1,78 @@
+.contactsPage{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.contacts{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.contact a{
+    transition: all .2s;
+}
+
+.contact a:hover{
+    color: var(--gold);
+}
+
+.address{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 37px 0;
+    border-top: 2px solid #2A2A2A;
+    border-bottom: 2px solid #2A2A2A;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.addressLeft{
+    max-width: 570px;
+}
+
+.addressText{
+    margin-bottom: 16px;
+}
+
+.addressLeft a{
+    transition: all .2s;
+}
+
+.addressLeft a:hover{
+    color: var(--gold);
+}
+
+.buttons{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+}
+
+@media (max-width: 900px){
+    .address{
+        flex-direction: column;
+    }
+    .map{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .map iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .buttons{
+        flex-direction: column;
+        gap: 20px;
+        align-items: baseline;
+    }
+    .contact a{
+        font-size: 18px;
+    }
+}

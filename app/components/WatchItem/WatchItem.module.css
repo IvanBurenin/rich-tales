@@ -1,0 +1,108 @@
+.watchItem{
+    padding: 30px 20px;
+    position: relative;
+    border: 1px solid #2B2B2B;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .1s;
+}
+
+.watchItem:hover{
+    border: 1px solid #818181;
+}
+
+.watchItem:hover .icon{
+    display: block;
+}
+
+.icon{
+    position: absolute;
+    align-self: flex-start;
+    display: none;
+    cursor: pointer;
+}
+
+.icon:hover path{
+    stroke: var(--gold);
+}
+
+.iconActive.icon path{
+    fill: var(--gold);
+    stroke: none;
+}
+
+.iconActive.icon{
+    display: block;
+}
+
+.img{
+    width: 271px;
+    height: 355px;
+    object-fit: contain;
+}
+
+.title{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .1s;
+}
+
+.title:hover{
+    color: var(--gold);
+}
+
+.price{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #C6C6C6;
+}
+
+.btn{
+    padding: 5px 25px;
+    margin: 15px auto 0;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    cursor: pointer;
+    transition: all .1s;
+    
+    color: var(--white);
+    text-align: center;
+    font-family: Golos Text;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+@media (max-width: 1200px){
+    .watchItem{
+        width: 40%;
+    }
+}
+
+@media (max-width: 800px){
+    .img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .watchItem{
+        width: 212px;
+        min-height: 340px;
+    }
+    .img{
+        width: 100px;
+        height: 160px;
+    }
+}

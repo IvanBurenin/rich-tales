@@ -1,0 +1,28 @@
+.favoritesPage{
+    padding-top: 160px;
+    padding-bottom: 200px;
+}
+
+.list{ 
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.favoritesItems{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.emptyBtn{
+    margin-top: 40px;
+}
+
+@media (max-width: 600px){
+    .favoritesItems{
+        gap: 30px;
+    }
+}

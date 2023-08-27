@@ -1,0 +1,281 @@
+.catalogue{
+    padding-top: 160px;
+    padding-bottom: 200px;
+}
+
+.watches{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.text{
+    font-size: 18px;
+    transition: all .1s;
+}
+
+.filterTop{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.selectedFilters{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.selectedFilter{
+    padding: 10px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.selectedFilter:hover{
+    border-color: var(--gold);
+}
+
+.selectedFilter:hover .filteredKey{
+    color: var(--gold);
+}
+
+.selectedFilter:hover .closeIcon path{
+    fill: var(--gold);
+}
+
+.closeIcon{
+    transform: all .2s;
+}
+
+.filteredKey{
+    transition: all .2s;
+}
+
+.filters{
+    margin-top: 35px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.filterIcon{
+    transform: rotateX(180deg);
+    transition: all .2s;
+}
+
+.filter:hover .filterTitle{
+    color: var(--gold);
+}
+
+.filter:hover .filterIcon path{
+    stroke: var(--gold);
+}
+
+.filterTitle{
+    color: #FFF;
+    font-family: Golos Text;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.filterInner{
+    position: absolute;
+    padding: 20px;
+    background-color: var(--black);
+    top: 37px;
+    z-index: 1000;
+    left: 0;
+    min-width: 140px;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid var(--white);
+    display: none;
+}
+
+.filterActive{
+    display: flex;
+}
+
+.filterIconActive{
+    transform: rotateX(0deg);
+}
+
+.filterKey{
+    color: var(--white);
+    font-family: Golos Text;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all .2s;
+}
+
+.filterKey:hover{
+    color: var(--gold);
+}
+
+.filterRight ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.label:hover .text{
+    color: var(--gold);
+}
+
+.label:hover .checkboxFake{
+    border-color: var(--gold);
+}
+
+.checkboxTrue{
+    display: none;
+}
+
+.checkboxFake{
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--white);
+    outline: none;
+    background-color: transparent;
+    transition: all .1s;
+}
+
+.checkboxTrue:checked + .checkboxFake{
+    background-color: var(--white);
+}
+
+.searching{
+    margin-top: 40px;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+.search{
+    padding: 15px;
+    width: 240px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+    outline: none;
+}
+
+.search::placeholder{
+    color: #737373;
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.searchIcon{
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 54px;
+    cursor: pointer;
+    display: none;
+}
+
+.searchIconActive{
+    display: flex;
+}
+
+.paginations{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.pagination{
+    padding: 3px 6px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.paginationActive{
+    border: 1px solid var(--gold);
+    color: var(--gold)
+}
+
+.pagePagination{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationArrow{
+    padding: 3px 6px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    transition: all .2s;
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .watches{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1300px){
+    .filterTop{
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+
+@media (max-width: 600px){
+    .watches{
+        gap: 30px;
+    }
+    .search{
+        width: 100% !important;
+    }
+    .pagePagination{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .paginationArrow{
+        display: flex;
+    }
+    .pagePagination{
+        display: none;
+    }
+}

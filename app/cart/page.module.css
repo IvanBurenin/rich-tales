@@ -1,0 +1,205 @@
+.cartPage{
+    padding-top: 160px;
+    margin-bottom: 200px;
+}
+
+.cartItems{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.form{
+    margin-top: 60px;
+}
+
+.formTitle{
+    text-transform: inherit;
+}
+
+.contacts{
+    margin-top: 35px;
+    display: flex;
+    gap: 40px;
+}
+
+.input{
+    padding: 20px;
+    border: 2px solid var(--white);
+    width: 280px;
+    outline: none;
+    background-color: transparent;
+
+    color: var(--white);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input::placeholder{
+    color: #767676;
+}
+
+.address{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.textarea{
+    padding: 20px;
+    border: 2px solid var(--white);
+    width: 600px;
+    height: 245px;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+
+    color: var(--white);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pay{
+    margin-top: 35px;
+    display: flex;
+    gap: 60px;
+}
+
+.label{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.labelText{
+    transition: all .2s;
+}
+
+.label:hover .labelText{
+    color: var(--gold);
+}
+
+.label:hover, .fakeRadio{
+    border-color: var(--gold);
+}
+
+.inputRadio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.fakeRadio{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--white);
+    border-radius: 100px;
+    transition: all .1s;
+    background-color: transparent;
+}
+
+.inputRadio:checked + .fakeRadio{
+    background-color: var(--white);
+}
+
+.formBtn{
+    margin-top: 50px;
+    padding: 40px;
+    width: 360px;
+}
+
+.empty{
+    margin-top: 40px;
+}
+
+.emptyBtn{
+    margin-top: 20px;
+    width: 300px !important;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); 
+    z-index: 1050;
+    opacity: 0; 
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; 
+    pointer-events: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalDialog {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.modalContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #0B0B0B;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalInner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modalOpened{
+    opacity: 1;
+	pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modalText{
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .input{
+        width: 100%;
+    }
+    .textarea{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .pay{
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,200 @@
+.top{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(144deg, #A4752F 0%, #786e5f 0.01%, #000 100%);
+}
+
+.topContainer{
+    height: 100%;
+}
+
+.topInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.topLeft{
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.topTitle{
+    color: var(--white);
+    font-family: 'Noto Serif', serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.arrivals{
+    margin-top: 105px;
+}
+
+.arrivalsText{
+    margin-top: 40px;
+}
+
+.suppliers{
+    margin-top: 265px;
+}
+
+.suppliersTopText{
+    margin-top: 40px;
+}
+
+.movingStroke{
+    margin-top: 80px;
+    border-top: 1px solid #2A2A2A;
+    border-bottom: 1px solid #2A2A2A;
+    overflow: hidden;
+}
+
+.movingStrokeWrap{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.brandImg{
+    width: 340px;
+    height: 171px;
+    object-fit: contain;
+}
+
+.suppliersBottomText{
+    margin-top: 80px;
+}
+
+.collections{
+    margin-top: 265px;
+}
+
+.collectionsText{
+    margin-top: 40px;
+}
+
+.collectionsContent{
+    margin-top: 60px;
+    display: flex;
+    gap: 49px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collectionImg{
+    width: 347px;
+    height: 624px;
+    object-fit: cover;
+}
+
+.collectionTitle{
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.collectionsDown{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    margin-top: 265px;
+    padding-bottom: 200px;
+}
+
+.aboutInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutLeft{
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutTitle{
+    font-family: 'Noto Serif', serif;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 10.08px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1250px){
+    .collectionImg{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px){
+    .aboutInner{
+        flex-direction: column;
+    }
+    .aboutLeft{
+        max-width: 100%;
+    }
+    .aboutRight{
+        margin-top: 40px;
+    }
+    .aboutTitle{
+        text-align: center;
+    }
+}
+
+@media(max-width: 730px){
+    .topImg{
+        display: none;
+    }
+    .collectionsContent{
+        flex-direction: column;
+    }
+    .collectionImg{
+        height: 300px;
+    }
+    .collectionImg:nth-child(2){
+        object-position: bottom;
+    }
+}
+
+@media(max-width: 600px){
+    .topTitle{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 400px){
+    .brandImg{
+        width: 200px;
+        height: 100px;
+    }
+    .collectionTitle{
+        left: 0;
+    }
+}
+
+@media(max-height: 600px){
+    .top{
+        padding-top: 194px;
+    }
+}
