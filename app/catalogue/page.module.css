@@ -259,6 +259,15 @@
     }
 }
 
+@media (max-width: 800px){
+    .paginationArrow{
+        display: flex;
+    }
+    .pagePagination{
+        display: none;
+    }
+}
+
 @media (max-width: 600px){
     .watches{
         gap: 30px;
@@ -268,14 +277,5 @@
     }
     .pagePagination{
         width: 100%;
-    }
-}
-
-@media (max-width: 500px){
-    .paginationArrow{
-        display: flex;
-    }
-    .pagePagination{
-        display: none;
     }
 }
