@@ -52,7 +52,7 @@ export default function CartItem({cart, updateTotalSumm}) {
                     </div>
                 </div>
             </div>
-            <img onClick={() => onDeleteCartItem(cart.parentId)} src="/rich-tales/home-images/menu-close.svg" alt="" className={styles.close} />
+            <img onClick={() => onDeleteCartItem(cart.parentId)} src="./rich-tales/home-images/menu-close.svg" alt="" className={styles.close} />
         </div>
     )
 }
